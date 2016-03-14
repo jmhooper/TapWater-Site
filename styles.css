@@ -1,0 +1,104 @@
+html {
+  font-family: "Ubuntu", sans-serif;
+  color: #555;
+  font-size: 20px;
+}
+
+div#wrapper {
+  margin: 64px;
+}
+
+div#column-left {
+  display: inline-block;
+  width: 59%;
+  vertical-align: top;
+}
+
+div#column-right {
+  display: inline-block;
+  width: 39%;
+  vertical-align: top;
+}
+
+
+div#brand img {
+  display: inline-block;
+  height: 256px;
+  width: 256px;
+  border-radius: 32px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5)
+}
+
+div#brand h1 {
+  display: inline-block;
+  margin: 0 0 0 32px;
+  font-size: 3rem;
+  line-height: 64px;
+  position: relative;
+  bottom: 106px;
+}
+
+img#screenshot {
+  width: 100%;
+  -webkit-filter: drop-shadow(0 0 16px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow( 0 16px rgba(0, 0, 0, 0.5));
+}
+
+img#app-store-badge {
+  height: 40px;
+}
+
+p {
+  font-size: 1rem;
+  margin-right: 32px;
+}
+
+a {
+  color: #3498DB;
+}
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 16px
+  }
+
+  div#brand img {
+    height: 128px;
+    width: 128px;
+  }
+
+  div#brand h1 {
+    font-size: 32px;
+    bottom: 55px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  div#wrapper {
+    margin: 16px;
+  }
+
+  div#column-left {
+    width: 100%;
+  }
+
+  div#column-right {
+    display: none;
+  }
+
+  p {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 401px) {
+  div#brand img {
+    display: block;
+  }
+
+  div#brand h1 {
+    display: block;
+    margin: 16px 0 8px 0;
+    bottom: auto;
+  }
+}
